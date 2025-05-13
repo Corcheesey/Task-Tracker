@@ -1,3 +1,88 @@
 :root {
     font-family: sans-serif;
 }
+
+#main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 50vh;
+}
+
+#task-tracker {
+    border: 3px solid black;
+    border-radius: 12px;
+    padding: 25px 50px;
+}
+
+#input-container label, input {
+    display: flex;
+}
+
+#input-label {
+    margin-bottom: 10px;
+    font-size: larger;
+}
+
+#input-form {
+    display: flex;
+    padding: 2px;
+    border: 3px solid black;
+    border-radius: 8px;
+}
+
+#input-text {
+    border: none;
+    outline: none;
+    width: 400px;
+    height: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+}
+
+#input-btn {
+    width: 40px;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 24px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+
+#input-btn:active {
+    background-color: grey;
+}
+
+#task-container {
+    margin-top: 10px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox {
+    accent-color: grey;
+}
+
+.task-description {
+    position: relative;
+    font-size: 20px;
+    top: 5px;
+}
+
+.task-description.completed {
+    position: relative;
+    font-size: 20px;
+    top: 5px;
+    text-decoration: line-through;
+    color: grey;
+}
+
+.delete-btn {
+    height: 30px;
+}
