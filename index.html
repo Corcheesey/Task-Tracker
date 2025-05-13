@@ -4,12 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Tracker</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
 </head>
 <body>
-
-
-    
+    <div id="main-container">
+        <div id="task-tracker">
+            <div id="input-container">
+                <label for="input-text" id="input-label">Task Tracker</label>
+                <div id="input-form">
+                    <input type="text" id="input-text" placeholder="What task do you want to complete?" autocomplete="off">
+                    <button id="input-btn" onclick="createTask()">&#8617;</button>
+                </div>
+            </div>
+            <div id="task-container">
+                <!--
+                Example of task created when createTask function is called.
+                
+                <div class="task-item" status="incomplete" task-id="Date.now()">
+                    <input type="checkbox" name="check box" class="checkbox">
+                    <p class="task-description"></p>
+                    <button class="delete-btn"><span class="glyphicon glyphicon-trash"></span></button>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
 <script src="main.js"></script>
 </body>
 </html>
